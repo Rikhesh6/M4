@@ -55,6 +55,7 @@ Write a C Program to check whether the two numbers are equal or not using simple
 5.	Stop the program.
 
 ## PROGRAM
+```
 #include <stdio.h>
 int main() {
     int num1, num2;
@@ -72,7 +73,7 @@ int main() {
 
     return 0;
 }
-
+```
 
 ## OUTPUT
 ![image](https://github.com/user-attachments/assets/889e073d-232f-4464-b615-4d55c28d44dd)
@@ -97,8 +98,23 @@ Write a C Program to convert the given string into lowercase.
 5.	Stop the program.
 
 ## PROGRAM
+```
+#include <stdio.h>
+#include <ctype.h>
 
+int main() {
+    char str[10];
+    int i = 0;
+    scanf("%s", str);
+    while (str[i] != '\0') {
+        str[i] = tolower(str[i]);
+        i++;}
+printf("%s\n", str);return 0;
+}
+```
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/9f6ae1cf-c403-4bf0-91cb-523142b23d8e)
+
 
 
 
@@ -122,8 +138,24 @@ Write a C Program to count the total number of words in a given string using do 
 6.	Stop the program.
 
 ## PROGRAM
+```
+#include <stdio.h>
+
+int main() {
+    char str[1000];
+    int i=0,w=1;
+    scanf("%[^\n]",str);
+    do{
+        if (str[i]==' '){
+            w++;
+        } i++;
+    }while(str[i]!='\0');
+    printf("No of words: %d\n",w);}
+```
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/cd1b55f5-bf98-4533-8321-543c210072bd)
+
 
 
 
@@ -156,9 +188,27 @@ Step 7: After the loop, check the value of flag:
 Step 8: End the program.
 
 ## PROGRAM
+```
+#include <stdio.h>
+int main(){
+    char c1[100],c2[100];
+    int i=0,f=0;
+    scanf("%[^\n]",c1);getchar();
+    scanf("%[^\n]",c2);
+    while(c1[i]!='\0'&& c2[i]!='\0'){
+        if(c1[i]!=c2[i]){f=1;}i++;
+    }
+    if(f==0){printf("same");}
+    else {printf("different");}
+    
+}
+```
+
 
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/ae0fa3b9-2d11-4526-8152-4e37aa2b0df7)
+
  
 
 ## RESULT
