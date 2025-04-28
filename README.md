@@ -10,10 +10,18 @@ To write a C Program to perform the basic left shift operation for 44 integer nu
 5.	Stop the program.
 
 ## PROGRAM
+```
+#include <stdio.h> 
+int main() { 
+int a = 44, b = 3; 
+int result = a << b; 
+printf("result: %d\n", result); 
+return 0; 
+}
+```
 
 ## OUTPUT
-
-
+![image](https://github.com/user-attachments/assets/d5ba3bcf-16b1-4057-84d8-d43d08399908)
 
 
 
@@ -47,9 +55,28 @@ Write a C Program to check whether the two numbers are equal or not using simple
 5.	Stop the program.
 
 ## PROGRAM
+#include <stdio.h>
+int main() {
+    int num1, num2;
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+    if (num1 == num2) {
+        printf("The numbers are equal.\n");
+    }
+
+    if (num1 != num2) {
+        printf("The numbers are not equal.\n");
+    }
+
+    return 0;
+}
 
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/889e073d-232f-4464-b615-4d55c28d44dd)
+
            
 ## RESULT
 
